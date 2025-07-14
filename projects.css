@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1f1925;
+    color: white;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: 900;
+
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80, #ff6ec4);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 10s ease infinite;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+ul li {
+    border: 1px solid #c1a0e280;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+ul h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+ul h3 {
+    color: #c1a0e2;
+}
+
+.back-button {
+    padding-top: 2rem;
+    color: #c1a0e2;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+.back-button i {
+    padding: 2rem 0;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
